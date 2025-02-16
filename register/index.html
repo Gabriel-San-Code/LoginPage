@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://kit.fontawesome.com/1d1783b291.js" crossorigin="anonymous"></script>
+    <title>Registre-se</title>
+</head>
+<body>
+    <header>
+        <div id="theme-container">
+            <input type="checkbox" name="change-theme" id="change-theme"/>
+            <label for="change-theme">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>Cadastre-se para acessar o sistema</h1>
+            <form action="" method="" id="register-form">
+                <div class="full-box">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail" data-min-length="3" data-required data-email-validate/>
+                </div>
+                <div class="half-box spacing">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Insira seu nome" data-min-length="5" data-max-length="16" data-only-letters/>
+                </div>
+                <div class="half-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Insira seu sobrenome" data-required data-min-length="5" data-max-length="30"/>
+                </div>
+                <div class="half-box spacing">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" data-password-validate data-required placeholder="Insira sua senha"/>
+                </div>
+                <div class="half-box">
+                    <label for="password-confirmation">Confirme sua senha</label>
+                    <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Insira sua senha novamente" data-required data-equal="password"/>
+                </div>
+                <div class="full-box">
+                    <input type="checkbox" name="agreement" id="agreement" data-required/>
+                    <label for="agreement" id="agreement-label">Li e aceito os <a href="#">termos de uso</a></label>
+                </div>
+                <div class="full-box">
+                    <input type="submit" id="btn-submit" value="Registrar"/> 
+                </div>
+            </form>
+        </div>
+    </main>
+    <p class="error-validation template"></p>
+    <script src="js/scripts.js"></script>
+    <script src="js/changeTheme.js"></script>
+
+</body>
+</html>

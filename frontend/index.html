@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d1783b291.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div id="theme-container">
+            <input type="checkbox" name="change-theme" id="change-theme"/>
+            <label for="change-theme">
+                <i class="fa-solid fa-moon"></i> 
+                <i class="fa-solid fa-sun"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div id="login-container">
+            <h1>Login</h1>
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Insira seu e-mail" autocomplete="off" required/>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Insira sua senha" required/>
+                <a href="#" id="forgot-password">Esqueceu a senha?</a>
+                <input type="submit" value="Login" />
+            </form>
+            <div id="social-container">
+                <p>Ou entre pelas suas redes sociais</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div id="resgister-container">
+                <a href="../register/index.html" id="register">Registre-se</a>
+            </div>
+        </div>
+    </main>
+    <script src="js/changeTheme.js"></script>
+</body>
+</html>
